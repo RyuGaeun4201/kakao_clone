@@ -1,0 +1,16 @@
+.alarm {
+    display: flex;
+    color: var(--notification);
+    font-size: 50px;
+    position: absolute;
+}
+
+.alarm__header {
+    bottom: 45px;
+    right: 15px;
+}
+
+.alarm__nav {
+    bottom: 20px;
+    right: -10px;
+}
