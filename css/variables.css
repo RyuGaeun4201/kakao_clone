@@ -1,4 +1,8 @@
 :root {
     --main-color: skyblue;
-    --sub-color: rgb(253, 135, 0);
+    --sub-color: rgb(238, 95, 7);
+    --notification: rgb(0, 115, 255);
+    --banner: rgb(87, 197, 241);
+
+    --horizontal-space: 25px;
 }
