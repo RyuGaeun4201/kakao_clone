@@ -10,19 +10,46 @@
 @import "components/user-component.css";
 @import "components/badge.css";
 @import "components/alarm.css";
+@import "components/icon-row.css";
+@import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
 
 /* Screens */
 @import "screens/login.css";
 @import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chatting.css";
 
 body {
     color: rgba(0, 0, 0, 0.9);
     font-family: 'Open Sans', sans-serif;
     background-color: var(--main-color);
     padding-top: 25px;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
 }
 
 .main__screen {
     padding: 0px var(--horizontal-space);
+}
+
+@keyframes hearthbeatAnimation {
+    0% {
+        color: white;
+        transform: none;
+    }
+    50% {
+        color: var(--notification);
+        transform: scale(1.2);
+    }
+    100% {
+        color: white;
+        transform: none;
+    }
+}
+
+.fa-heart:hover {
+    will-change: transform;
+    animation: hearthbeatAnimation 1s linear infinite;
 }
