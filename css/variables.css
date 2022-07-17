@@ -3,6 +3,9 @@
     --sub-color: rgb(238, 95, 7);
     --notification: rgb(0, 115, 255);
     --banner: rgb(87, 197, 241);
+    --grey: rgba(0, 0, 0, 0.5);
 
     --horizontal-space: 25px;
+
+    --main-border: 1px solid rgba(0, 0, 0, 0.2);
 }
