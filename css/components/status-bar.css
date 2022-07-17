@@ -1,5 +1,6 @@
 .status-bar {
     color: black;
+    background-color: var(--main-color);
     position: fixed;
     top: 0;
     width: 100%;
@@ -8,6 +9,8 @@
     display: flex;
     justify-content: center;
     padding : 5px 3px;
+
+    z-index: 2;
 }
 
 .status-bar__column {
@@ -30,5 +33,5 @@
 }
 
 .status-bar__column .fa-battery-full {
-margin: 0px 5px;
+    margin: 0px 5px;
 }
