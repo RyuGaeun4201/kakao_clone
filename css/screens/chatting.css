@@ -1,0 +1,220 @@
+.chatting-screen {
+    background-color: var(--sub-color);
+    padding-top: 120px;
+    padding-bottom: 40px;
+}
+
+.chatting-screen .status-bar {
+    background-color: var(--sub-color);
+}
+
+.chatting-screen .alt-header {
+    background-color: var(--sub-color);
+    position: fixed;
+    top: 26px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+@keyframes fadeIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0%;
+    }
+    to {
+        transform: none;
+        opacity: 100%
+    }
+}
+
+.main__chatting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.chatting__timestamp {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 18px;
+    margin-bottom: 25px;
+}
+
+.chatting-row {
+    width: 100%;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.chatting-row img {
+    width: 50px;
+    height: 50px;
+    border-radius: 40%;
+    margin-right: 15px;
+}
+
+.chatting__author {
+    opacity: 0.7;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.chatting__info {
+    display: flex;
+    align-items: flex-end;
+}
+
+.chatting__bubble {
+    background-color: white;
+    padding: 8px 12px;
+    border-radius: 12px;
+    border-top-left-radius: 0px;
+}
+
+.chatting__time {
+    opacity: 0.7;
+    font-size: 12px;
+    margin: 0px 7px;
+}
+
+.chatting-row--own {
+    justify-content: flex-end;
+}
+
+.chatting-row--own .chatting__bubble {
+    background-color: var(--main-color);
+    border-radius: 12px;
+    border-top-right-radius: 0px;
+}
+
+.chatting-row--own .chatting__info {
+    flex-direction: row-reverse;
+}
+
+.chatting-row--consecutive {
+    padding-left: 65px;
+    box-sizing: border-box;
+}
+
+.chatting-row__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 36px;
+    height: 18px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 3px;
+    border-radius: 18px;
+    margin: 8px 0px;
+}
+
+.chatting-row__icon span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 2px;
+}
+
+.chatting-row__contents {
+    display: flex;
+    flex-direction: column;
+}
+
+.chatting-row--own .chatting-row__contents {
+    align-items: flex-end;
+}
+
+.chatting-row__icon__round-border {
+    display: block;
+    width: 17px;
+    height: 17px;
+    background-color: var(--notification);
+    font-size: 12px;
+    border-radius: 50%;
+}
+
+.chatting-row__icon__number {
+    font-size: 14px;
+}
+
+.reply {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px 25px;
+}
+
+.reply__column:first-child {
+    width: 5%;
+    margin-right: 10px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.reply__column:last-child {
+    width: 95%;
+    position: relative;
+}
+
+.reply input {
+    font-size: 16px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    width: 100%;
+    border: var(--main-border);
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.reply input::placeholder{
+    font-size: 14px;
+}
+
+.reply__column > i {
+    font-size: 25px;
+    opacity: 50%;
+}
+
+.reply__column:last-child > i,
+.reply__column:last-child > button {
+    position: absolute;
+    right: 3px;
+    bottom: 2.8px;
+}
+
+.reply__column:last-child > i {
+    right: 46px;
+    bottom: 8px;
+}
+
+.reply__column:last-child > button {
+    background-color: var(--main-color);
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.reply__column:last-child > button:focus,
+.reply__column:last-child > button:active {
+    outline: none;
+}
+
+.reply:focus-within .reply__column:first-child {
+    opacity: 0%;
+}
+
+.reply:focus-within input {
+    width: 106%;
+    transform: translate(-5.6%);
+}
