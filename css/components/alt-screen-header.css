@@ -7,26 +7,26 @@
 }
 
 .alt-header__title {
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 600;
 }
 
 .alt-header__column:first-child {
-    width: 25%;
+    width: 20%;
 }
 
 .alt-header__column:nth-child(2) {
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: center;
 }
 
 .alt-header__column:last-child {
-    width: 25%;
+    width: 20%;
     display: flex;
     justify-content: flex-end;
 }
 
 .alt-header__column:last-child span {
-    margin-left: 20px;
+    margin-left: 14px;
 }
