@@ -23,7 +23,8 @@
     margin: 0px 30px;
 }
 
-#login-form input {
+#login-form input,
+#login-form button {
     background-color: var(--main-color);
     border: none;
     margin-bottom: 25px;
@@ -41,7 +42,8 @@
     transition: color 0.3s ease-in-out;
 }
 
-#login-form input:focus {
+#login-form input:focus,
+#login-form button:focus {
     border-color: var(--sub-color);
 
 }
@@ -50,7 +52,8 @@
     color: var(--sub-color);
 }
 
-#login-form input[type = "submit"] {
+#login-form input[type = "submit"],
+#login-form button {
     color: var(--main-color);
     background-color: var(--sub-color);
     cursor: pointer;
@@ -58,9 +61,14 @@
     border-radius: 5px;
 }
 
-#login-form a {
+#login-form span {
     text-align: center;
     text-decoration: none;
     color: inherit;
     font-size: 13px;
+}
+
+#login-form button {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: var(--sub-color);
 }
